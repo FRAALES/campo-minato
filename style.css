@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: 50px auto;
+    padding: 50px;
+    background-color: aquamarine;
+    max-width: 1200px;
+    line-height: 2;
+}
+
+.seconda-linea{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+
+.campo{
+    border: 2px solid;
+    color: black;
+    height: 1000px;
+    width: 1000px;
+}
+
