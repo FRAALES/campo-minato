@@ -50,6 +50,9 @@ for (let i = 1; i <= 100; i++) {
 
   //Gestiamo il click della cella
   cell.addEventListener("click", function () {
+    //Controllo se la cella è già stata cliccata
+    if (cell.classList.contains("cell-clicked")) return;
+
     //Questo codice viene eseguito quando avviene l'evento
     if (bombsList.includes(i)) {
       //Se è una bomba...
