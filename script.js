@@ -8,7 +8,7 @@ const endGameText = document.querySelector(".end-game-text");
 const playAgainButton = document.querySelector(".play-again");
 
 //preparo informazioni utili alla logica di gioco
-const toatalCells = 100;
+const totalCells = 100;
 const totalBombs = 16;
 const maxScore = totalCells - totalBombs;
 const bombsList = []; //Questo è un array vuoto
@@ -83,3 +83,12 @@ function endGame() {
   console.log("La partita è finita");
   endGameScreen.classList.remove("hidden");
 }
+
+//funzione per ricaricare la pagina
+function playAgain() {
+  location.reload();
+}
+
+//EVENTI
+
+playAgainButton.addEventListener("click", playAgain);
