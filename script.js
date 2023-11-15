@@ -10,13 +10,13 @@ const playAgainButton = document.querySelector(".play-again");
 //preparo informazioni utili alla logica di gioco
 const toatalCells = 100;
 const totalBombs = 16;
-const maxScore = toatalCells - totalBombs;
+const maxScore = totalCells - totalBombs;
 const bombsList = []; //Questo è un array vuoto
 let score = 0;
 
 //Generare TOT bombe casuali
 while (bombsList.length < totalBombs) {
-  const number = Math.floor(Math.random() * toatalCells) + 1;
+  const number = Math.floor(Math.random() * totalCells) + 1;
   if (!bombsList.includes(number)) {
     bombsList.push(number);
   }
@@ -81,4 +81,5 @@ function updateScore() {
 //Funzione per finire la partita se trovo una bomba
 function endGame() {
   console.log("La partita è finita");
+  endGameScreen.classList.remove("hidden");
 }
